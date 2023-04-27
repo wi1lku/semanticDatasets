@@ -49,7 +49,7 @@
 
   {{- if isset .Params "data_file"}}
   <button class="download-button">
-    <a href='/downloads/datasets/{{ .Param "data_file"}}' target="_blank">Dataset</a>
+    <a href='/downloads/datasets/{{ .Param "data_file"}}' target="_blank" download='{{ .Param "data_file"}}'>Dataset</a>
   </button>
   {{- end }}
 
