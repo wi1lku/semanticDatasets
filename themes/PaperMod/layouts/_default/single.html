@@ -40,32 +40,32 @@
   </div>
   {{- end }}
 
-  Downloads:&nbsp;&nbsp;<br/>
-  {{- if isset .Params "annotation_file"}}
-  <button class="download-button">
-    <a href='/downloads/annotations/{{ .Param "annotation_file"}}' target="_blank" download='{{ .Param "annotation_file"}}'>Annotations</a>
-  </button>
-  {{- end }}
+  {{if eq .Section "datasets"}}
 
-  {{- if isset .Params "data_file"}}
-  <button class="download-button">
-    <a href='/downloads/datasets/{{ .Param "data_file"}}' target="_blank" download='{{ .Param "data_file"}}'>Dataset</a>
-  </button>
-  {{- end }}
-
-  <footer>
-    <button class="return-button">
-      <a href='/datasets'>
-        <i class="fa-solid fa-chevron-up fa-rotate-270"></i>
-        Go back to datasets
-      </a>
+    Downloads:&nbsp;&nbsp;<br/>
+    {{- if isset .Params "annotation_file"}}
+    <button class="download-button">
+      <a href='/downloads/annotations/{{ .Param "annotation_file"}}' target="_blank" download='{{ .Param "annotation_file"}}'>Annotations</a>
     </button>
-  </footer>
+    {{- end }}
 
-  
-  {{- if (.Param "comments") }}
-  {{- partial "comments.html" . }}
+    {{- if isset .Params "data_file"}}
+    <button class="download-button">
+      <a href='/downloads/datasets/{{ .Param "data_file"}}' target="_blank" download='{{ .Param "data_file"}}'>Dataset</a>
+    </button>
+    {{- end }}
+
+    <footer>
+      <button class="return-button">
+        <a href='/datasets'>
+          <i class="fa-solid fa-chevron-up fa-rotate-270"></i>
+          Go back to datasets
+        </a>
+      </button>
+    </footer>
+
   {{- end }}
+
 </article>
 
 {{- end }}{{/* end main */}}

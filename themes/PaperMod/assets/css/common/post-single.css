@@ -317,11 +317,15 @@
     font-size: 12px;
     line-height: 34px;
     background: var(--tertiary);
+    font-weight: bold;
 }
 
-.post-tags a:hover,
 .paginav a:hover {
     background: var(--tertiary);
+}
+
+.post-tags a:hover {
+    background: rgb(190, 190, 190);
 }
 
 .download-button {
@@ -335,10 +339,34 @@
     border: 1px solid var(--border);
 }
 
-.download-button a {
-    background: var(--secondary);
+.download-button:hover{
+    background: rgb(80, 80, 80);
     color: var(--code-bg);
 }
+
+.download-button a {
+    color: var(--code-bg);
+}
+
+.download-button-all {
+    border-radius: var(--radius);
+    background: var(--tertiary);
+    color: var(--code-bg);
+    padding-inline-start: 14px;
+    padding-inline-end: 14px;
+    font-size: 18px;
+    line-height: 40px;
+    border: 1px solid var(--border);
+}
+
+.download-button-all a {
+    color: var(--primary);
+}
+
+.download-button-all:hover{
+    background: rgb(190, 190, 190);
+}
+
 
 .return-button {
     border-radius: var(--radius);
@@ -354,8 +382,11 @@
 }
 
 .return-button a {
-    background: var(--tertiary);
     color: var(--primary);
+}
+
+.return-button:hover {
+    background: rgb(190, 190, 190);
 }
 
 .share-buttons {
@@ -432,4 +463,26 @@ h1>a>svg {
 img.in-text {
     display: inline;
     margin: auto;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form button {
+    border-radius: var(--radius);
+    background: var(--tertiary);
+    display: flex;
+    color: var(--primary);
+    padding-inline-start: 14px;
+    padding-inline-end: 14px;
+    font-size: 18px;
+    line-height: 40px;
+    border: 1px solid var(--border);
+    margin-top: 10px;
+}
+
+form button:hover {
+    background: rgb(190, 190, 190);
 }

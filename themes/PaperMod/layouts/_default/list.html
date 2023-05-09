@@ -7,11 +7,17 @@
 <header class="page-header">
   {{- if eq $kind `term`}}
     <h1>Filter by: {{ .Title }}</h1>
-    <button class="return-button">
+    <button class="return-button" style="margin-top: 10px;">
       <a href='/datasets'>Delete filter</a>
     </button>  
   {{- else }}
-    <h1>{{ .Title }}</h1>
+    <h1 style="margin-bottom: 10px;">{{ .Title }}</h1>
+    <button class="download-button-all">
+      <a href='/downloads/annotations.zip' target="_blank" download='annotations.zip'>Download all annotations</a>
+    </button>
+    <button class="download-button-all">
+      <a href='/downloads/datasets.zip' target="_blank" download='datasets.zip'>Download all datasets</a>
+    </button>
   {{- end }}
 </header>
 {{- end }}

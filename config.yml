@@ -1,6 +1,6 @@
 baseURL: ""
 languageCode: en-us
-title: Semantic Datasets
+title: "Semantic metaNet"
 theme: PaperMod
 paginate: 5
 
@@ -17,7 +17,7 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: "Semantic Datasets"
+  title: "Semantic metaNet"
   description: "ExampleSite description"
   keywords: [Blog, Portfolio, PaperMod]
   author: Me
@@ -53,7 +53,7 @@ params:
     safari_pinned_tab: "<link / abs url>"
 
   label:
-    text: "Semantic Datasets"
+    text: "Semantic metaNet"
     icon: /apple-touch-icon.png
     iconHeight: 35
 
@@ -111,14 +111,18 @@ menu:
       name: Datasets
       url: /datasets/
       weight: 20
+    - identifier: upload
+      name: Upload
+      url: /upload/
+      weight: 30
     - identifier: github
       name: GitHub
-      url: https://github.com/
-      weight: 30
+      url: https://github.com/MI2DataLab/Semantic-metaNet
+      weight: 40
     - identifier: paper
       name: Paper
       url: https://arxiv.org/
-      weight: 30
+      weight: 50
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
